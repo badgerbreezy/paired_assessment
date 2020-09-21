@@ -15,6 +15,8 @@ pry(main)> bobbi.age
 
 pry(main)> bobbi.salary
 # => 100000
+
+
 Iteration 2
 Use TDD to create a Department class that responds to the following interaction pattern:
 

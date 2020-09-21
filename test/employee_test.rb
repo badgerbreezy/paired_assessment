@@ -17,5 +17,4 @@ class EmployeeTest < Minitest::Test
     assert_equal 30, bobbi.age
     assert_equal 100000, bobbi.salary
   end
-
 end
