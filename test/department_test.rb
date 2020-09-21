@@ -6,15 +6,15 @@ require './lib/department'
 
 class DepartmentTest < Minitest::Test
   def test_it_exists
-    Department.new("Customer Service")
+    customer_service = Department.new("Customer Service")
 
-    assert_instance_of Department, department
+    assert_instance_of Department, customer_service
   end
 
   def test_it_has_attributes
-    Department.new("Customer Service")
+    customer_service = Department.new("Customer Service")
 
-    assert_equal "Customer Service, customer_service.name
+    assert_equal "Customer Service", customer_service.name
     assert_equal [], customer_service.employees
   end
 end
