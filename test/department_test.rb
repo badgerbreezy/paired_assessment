@@ -28,4 +28,15 @@ class DepartmentTest < Minitest::Test
 
     assert_equal [bobbi, aaron], customer_service.employees
   end
+
+  def test_it_can_calculate_expenses
+    customer_service = Department.new("Customer Service")
+    bobbi = Employee.new({name: "Bobbi Jaeger", age: "30", salary: "100000"})
+    aaron = Employee.new({name: "Aaron Tanaka", age: "25", salary: "90000"})
+    
+    assert_equal 0, customer_service.expenses
+    customer_service.expense(100)
+    customer_service.expense(25)
+    assert_equal 125, customer_service.expenses
+  end
 end
