@@ -26,6 +26,6 @@ class DepartmentTest < Minitest::Test
     customer_service.hire(bobbi)
     customer_service.hire(aaron)
 
-    assert_equal [bobbi. aaron], customer_service.employees
+    assert_equal [bobbi, aaron], customer_service.employees
   end
 end
