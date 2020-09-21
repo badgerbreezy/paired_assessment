@@ -14,8 +14,8 @@ class EmployeeTest < Minitest::Test
     bobbi = Employee.new({name: "Bobbi Jaeger", age: "30", salary: "100000"})
 
     assert_equal "Bobbi Jaeger", bobbi.name
-    assert_equal 30, bobby.age
-    assert_equal 100000, bobby.salary
+    assert_equal 30, bobbi.age
+    assert_equal 100000, bobbi.salary
   end
 
 end
